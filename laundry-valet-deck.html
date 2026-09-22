@@ -20,16 +20,6 @@
   --gold-glow:0 0 60px rgba(200,164,92,.08);
 }
 *{ box-sizing:border-box; margin:0; padding:0 }
-@font-face{
-  font-family:"Kanit";
-  src:url("https://fonts.googleapis.com/css2?family=Kanit:wght@400;600;700&display=swap");
-  font-weight:400 700; font-display:swap
-}
-@font-face{
-  font-family:"Prompt";
-  src:url("https://fonts.googleapis.com/css2?family=Prompt:wght@300;400;500&display=swap");
-  font-weight:300 500; font-display:swap
-}
 body{ background:var(--stage); font-family:"Prompt","Leelawadee UI",Tahoma,sans-serif; overflow:hidden }
 
 .slide{
@@ -38,7 +28,6 @@ body{ background:var(--stage); font-family:"Prompt","Leelawadee UI",Tahoma,sans-
   background:var(--stage-bg,var(--stage)); color:var(--text)
 }
 
-/* ===== TYPOGRAPHY ===== */
 h1{ color:var(--text); font-size:80px; line-height:1.08; letter-spacing:-.03em;
     font-family:"Kanit","Leelawadee UI",Tahoma,sans-serif; font-weight:700 }
 h2{ color:var(--text); font-size:52px; line-height:1.12; letter-spacing:-.02em;
@@ -52,7 +41,6 @@ p{ font-size:20px; line-height:1.7; color:var(--body); max-width:720px }
          text-transform:uppercase; font-size:14px; margin-bottom:16px;
          font-family:"Kanit","Leelawadee UI",Tahoma,sans-serif }
 
-/* ===== LAYOUT ===== */
 .brand{ position:absolute; left:100px; top:28px; font-weight:700; font-size:15px;
         color:var(--accent-text); letter-spacing:.06em;
         font-family:"Kanit","Leelawadee UI",Tahoma,sans-serif }
@@ -61,10 +49,8 @@ p{ font-size:20px; line-height:1.7; color:var(--body); max-width:720px }
          justify-content:space-between; color:var(--muted); font-size:12px;
          border-top:1px solid var(--line); padding-top:18px }
 
-/* ===== ACCENT LINE ===== */
 .accent-bar{ width:60px; height:4px; background:var(--accent); border-radius:2px; margin-bottom:24px }
 
-/* ===== HERO ===== */
 .hero{
   background-image:linear-gradient(90deg,rgba(13,11,8,.97) 0 30%,rgba(13,11,8,.4) 55%,rgba(13,11,8,.15)),
                    url('imgs/hero-cover.png');
@@ -73,7 +59,6 @@ p{ font-size:20px; line-height:1.7; color:var(--body); max-width:720px }
 .hero h1{ font-size:72px; max-width:680px }
 .hero .sub{ font-size:24px; color:var(--accent-text); margin-top:12px; font-weight:500 }
 
-/* ===== CARDS ===== */
 .card-grid{ display:flex; gap:24px; margin-top:20px }
 .card{ background:var(--panel); border:1px solid var(--line); border-radius:20px;
        padding:32px 28px; flex:1; box-shadow:var(--gold-glow);
@@ -88,14 +73,12 @@ p{ font-size:20px; line-height:1.7; color:var(--body); max-width:720px }
               font-size:11px; font-weight:700; padding:3px 12px; border-radius:20px;
               letter-spacing:.06em; text-transform:uppercase; margin-bottom:8px }
 
-/* ===== NUMBERS ===== */
 .stat-grid{ display:flex; gap:32px; margin-top:24px }
 .stat{ text-align:center; flex:1 }
 .stat .num{ font-size:64px; font-weight:700; color:var(--accent-text);
             font-family:"Kanit","Leelawadee UI",Tahoma,sans-serif; line-height:1 }
 .stat .label{ font-size:16px; color:var(--muted); margin-top:8px }
 
-/* ===== WIN-WIN ===== */
 .winwin-grid{ display:flex; gap:40px; margin-top:24px }
 .winwin-col{ flex:1; background:var(--panel); border:1px solid var(--line);
              border-radius:20px; padding:36px 28px; box-shadow:var(--gold-glow) }
@@ -106,7 +89,6 @@ p{ font-size:20px; line-height:1.7; color:var(--body); max-width:720px }
 .winwin-col li:last-child{ border-bottom:none }
 .winwin-col .check{ color:var(--accent); font-weight:700 }
 
-/* ===== TIMELINE ===== */
 .timeline{ display:flex; gap:0; margin-top:28px; position:relative }
 .timeline::before{ content:''; position:absolute; top:28px; left:40px; right:40px;
                    height:2px; background:var(--line) }
@@ -118,7 +100,6 @@ p{ font-size:20px; line-height:1.7; color:var(--body); max-width:720px }
                     font-family:"Kanit","Leelawadee UI",Tahoma,sans-serif }
 .timeline-step p{ font-size:13px; color:var(--muted); max-width:none }
 
-/* ===== TABLE ===== */
 table{ width:100%; border-collapse:collapse; margin-top:16px }
 th{ text-align:left; padding:14px 16px; font-size:14px; color:var(--accent-text);
     font-weight:600; border-bottom:2px solid var(--accent);
@@ -128,17 +109,14 @@ tr:last-child td{ border-bottom:none }
 .highlight td{ background:var(--panel); color:var(--text) }
 .highlight td:first-child{ border-left:3px solid var(--accent); border-radius:4px 0 0 4px }
 
-/* ===== CENTERED ===== */
 .center{ text-align:center; align-items:center }
 .center p{ margin:0 auto }
 
-/* ===== CTA ===== */
 .cta-box{ display:inline-block; background:var(--accent); color:var(--accent-ink);
            font-size:20px; font-weight:700; padding:16px 48px; border-radius:50px;
            margin-top:28px; font-family:"Kanit","Leelawadee UI",Tahoma,sans-serif;
            letter-spacing:.04em; box-shadow:0 8px 32px rgba(200,164,92,.25) }
 
-/* ===== ENTRANCES ===== */
 .rise{ opacity:1 }
 @keyframes rise{ from{opacity:0;transform:translateY(24px)} to{opacity:1;transform:none} }
 @keyframes fade{ from{opacity:0} to{opacity:1} }
@@ -160,7 +138,6 @@ tr:last-child td{ border-bottom:none }
 </head>
 <body>
 
-<!-- ===== SLIDE 1: COVER ===== -->
 <section class="slide hero">
   <div class="brand">นิติ รีดเรียบ</div>
   <div class="page">01 / 09</div>
@@ -171,7 +148,6 @@ tr:last-child td{ border-bottom:none }
   <div class="footer"><span>นิติ รีดเรียบ — รีดผ้า • ซักอบพับ • ดูแลผ้าครบวงจร</span><span>01</span></div>
 </section>
 
-<!-- ===== SLIDE 2: PROBLEM ===== -->
 <section class="slide">
   <div class="brand">นิติ รีดเรียบ</div>
   <div class="page">02 / 09</div>
@@ -201,7 +177,6 @@ tr:last-child td{ border-bottom:none }
   <div class="footer"><span>Laundry Valet Service — โอกาสทางธุรกิจ</span><span>02</span></div>
 </section>
 
-<!-- ===== SLIDE 3: OPPORTUNITY ===== -->
 <section class="slide">
   <div class="brand">นิติ รีดเรียบ</div>
   <div class="page">03 / 09</div>
@@ -233,7 +208,6 @@ tr:last-child td{ border-bottom:none }
   <div class="footer"><span>Laundry Valet Service — โอกาสทางธุรกิจ</span><span>03</span></div>
 </section>
 
-<!-- ===== SLIDE 4: 3 PACKAGES ===== -->
 <section class="slide">
   <div class="brand">นิติ รีดเรียบ</div>
   <div class="page">04 / 09</div>
@@ -269,7 +243,6 @@ tr:last-child td{ border-bottom:none }
   <div class="footer"><span>Laundry Valet Service — โอกาสทางธุรกิจ</span><span>04</span></div>
 </section>
 
-<!-- ===== SLIDE 5: WIN-WIN ===== -->
 <section class="slide">
   <div class="brand">นิติ รีดเรียบ</div>
   <div class="page">05 / 09</div>
@@ -304,7 +277,6 @@ tr:last-child td{ border-bottom:none }
   <div class="footer"><span>Laundry Valet Service — โอกาสทางธุรกิจ</span><span>05</span></div>
 </section>
 
-<!-- ===== SLIDE 6: LINE OA SYSTEM ===== -->
 <section class="slide">
   <div class="brand">นิติ รีดเรียบ</div>
   <div class="page">06 / 09</div>
@@ -334,7 +306,6 @@ tr:last-child td{ border-bottom:none }
   <div class="footer"><span>Laundry Valet Service — โอกาสทางธุรกิจ</span><span>06</span></div>
 </section>
 
-<!-- ===== SLIDE 7: NUMBERS ===== -->
 <section class="slide">
   <div class="brand">นิติ รีดเรียบ</div>
   <div class="page">07 / 09</div>
@@ -368,7 +339,6 @@ tr:last-child td{ border-bottom:none }
   <div class="footer"><span>Laundry Valet Service — โอกาสทางธุรกิจ</span><span>07</span></div>
 </section>
 
-<!-- ===== SLIDE 8: TIMELINE ===== -->
 <section class="slide">
   <div class="brand">นิติ รีดเรียบ</div>
   <div class="page">08 / 09</div>
@@ -408,7 +378,6 @@ tr:last-child td{ border-bottom:none }
   <div class="footer"><span>Laundry Valet Service — โอกาสทางธุรกิจ</span><span>08</span></div>
 </section>
 
-<!-- ===== SLIDE 9: CTA ===== -->
 <section class="slide center">
   <div class="brand">นิติ รีดเรียบ</div>
   <div class="page">09 / 09</div>
@@ -439,6 +408,27 @@ tr:last-child td{ border-bottom:none }
   </p>
   <div class="footer"><span>Laundry Valet Service — โอกาสทางธุรกิจ</span><span>09</span></div>
 </section>
+
+<script>
+(function(){
+  var slides = document.querySelectorAll('.slide');
+  var current = 0;
+  function show(n){
+    if(n < 0 || n >= slides.length) return;
+    slides.forEach(function(s,i){ s.style.display = i === n ? 'flex' : 'none' });
+    current = n;
+  }
+  show(0);
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'ArrowRight' || e.key === 'ArrowDown'){
+      e.preventDefault(); show(current + 1);
+    }
+    if(e.key === 'ArrowLeft' || e.key === 'ArrowUp'){
+      e.preventDefault(); show(current - 1);
+    }
+  });
+})();
+</script>
 
 </body>
 </html>
